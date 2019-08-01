@@ -1,0 +1,316 @@
+
+@font-face {
+	font-family: 'Knockout32';
+	src: url('../fonts/Knockout-HTF32-JuniorCruiserwt.eot');
+	src: url('../fonts/Knockout-HTF32-JuniorCruiserwt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Knockout-HTF32-JuniorCruiserwt.woff2') format('woff2'),
+		url('../fonts/Knockout-HTF32-JuniorCruiserwt.woff') format('woff'),
+		url('../fonts/Knockout-HTF32-JuniorCruiserwt.ttf') format('truetype'),
+		url('../fonts/Knockout-HTF32-JuniorCruiserwt.svg#Knockout-HTF32-JuniorCruiserwt') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Knockout48';
+	src: url('../fonts/Knockout-HTF48-Featherweight.eot');
+	src: url('../fonts/Knockout-HTF48-Featherweight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Knockout-HTF48-Featherweight.woff2') format('woff2'),
+		url('../fonts/Knockout-HTF48-Featherweight.woff') format('woff'),
+		url('../fonts/Knockout-HTF48-Featherweight.ttf') format('truetype'),
+		url('../fonts/Knockout-HTF48-Featherweight.svg#Knockout-HTF48-Featherweight') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Knockout51';
+	src: url('../fonts/Knockout-HTF51-Middleweight.eot');
+	src: url('../fonts/Knockout-HTF51-Middleweight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Knockout-HTF51-Middleweight.woff2') format('woff2'),
+		url('../fonts/Knockout-HTF51-Middleweight.woff') format('woff'),
+		url('../fonts/Knockout-HTF51-Middleweight.ttf') format('truetype'),
+		url('../fonts/Knockout-HTF51-Middleweight.svg#Knockout-HTF51-Middleweight') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Knockout50';
+    src: url('../fonts/Knockout-50Welterweight.woff2') format('woff2'),
+    url('../fonts/Knockout-50Welterweight.woff') format('woff'),
+    url('../fonts/Knockout-50Welterweight.ttf') format('truetype'),
+    url('../fonts/Knockout-50Welterweight.svg#Knockout-50Welterweight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f0efef;
+    font-size: 19px;
+    font-family: 'Knockout32';
+}
+li{
+    list-style: none;
+}
+a{
+    color: #e17000;
+    text-decoration: none;
+      transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+}
+p{
+    line-height: 1.4;
+}
+
+h1,h2,h3,h4,h5,h6{
+   
+}
+h2{
+    font-size: 46px;
+    line-height: 1;
+}
+h3{
+    font-size: 40px;
+    font-family: 'Knockout48';
+    font-weight: 300;
+}
+h4{
+    font-size: 30px;
+    font-family: 'Knockout51';
+}
+h5{
+    font-size: 24px;
+   font-family: 'Knockout48';
+    font-weight: 400;
+    line-height: 1.2;
+}
+h6{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Knockout48';
+}
+
+
+/* common css */
+.row-section{
+    width: 100%;
+    float: left;
+}
+.section{
+    padding: 0px 0px 60px 0px;
+    width: 100%;
+    float: left;
+}
+.sectionTop{
+    width: 100%;
+    float: left;
+    padding-top: 60px;
+    padding-bottom:60px;
+}
+.bg-control{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paddTop0{
+    padding-top: 0px;
+}
+.text-center{
+    text-align: center;
+}
+.img-responsive{
+    width: 100%;
+}
+img.block{
+    display: block;
+}
+img{max-width: 100%;}
+
+.flex{
+    display: flex;
+}
+.centerElement{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.center-text{
+    text-align:center;
+}
+.text-white *{
+    color: #fff;
+}
+.xxplay-button:after{
+    content: "\f0da";
+    font-family: FontAwesome;
+    font-size: 50px;
+    width: 62px;
+    height: 62px;
+    border: solid 2px #b1b0af;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    padding-left: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.arrow-3{
+    width:31px;
+}
+
+/* buttons */
+.btn{
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+.btn-link {
+    position:relative;
+    font-size: 30px;
+    color: #e17000;
+    padding-bottom: 6px;
+    font-family: 'Knockout48';
+    text-transform: uppercase;
+    padding-left: 0;
+    padding-right: 0;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+
+}
+.btn-link:before,.btn-link:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width:0%;
+    bottom:0;
+    left:0;
+}
+a.btn-link:after{
+    animation-duration: 1s;
+    animation-name: slideunderline;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+a.btn-link.loaded:before, a.btn-link.loaded:after{
+    animation-duration:0s;
+	
+    position: absolute;
+    width:100%;
+    bottom:0;
+    left:0;
+    height: 2px;
+    color:#e17000;
+}
+
+a.btn-link:hover:after{
+
+    animation-duration: .4s;
+    animation-name: resetunderline;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes slideunderline {
+
+    to {
+      background: #e17000;
+        width:100%;
+    }
+}
+@keyframes resetunderline {
+  0%{
+        background: #e17000;
+        width:0%;
+    }
+    100%{
+        background: #e17000;
+        width:100%;
+    }
+}
+.btn-site{
+    line-height: 54px;
+    color: #fff;
+    background: #e17000;
+    padding: 0px 25px;
+    font-family: 'Knockout48';
+    text-transform: uppercase;
+    font-size: 22px;
+    white-space: nowrap;
+}
+.btn-arrow{
+    background: url(../svgs/arrow-1.svg) no-repeat;
+    width: 20px;
+    height: 21px;
+}
+.btn-plus{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+.btn-plus:after{
+    content: "\f067";
+    font-family: FontAwesome;
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+/* forms */
+.form-control{
+    width: 100%;
+    padding: 0px 14px;
+    height: 54px;
+    outline: none;
+    border: none;
+}
+select,select:focus,select:active,input,button{
+    border:0px;
+    outline:0;
+    box-shadow:0;
+}
+
+.wpcf7-form input, .wpcf7-form textarea{
+    border: medium none;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.wpcf7-form input[type="submit"]{
+    max-width:250px;
+    background-color: #e17000;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    line-height: 45px;
+}
+
+.wpcf7-form input[type="submit"]:hover{ box-shadow: 0 0 4px rgba(0,0,0,0.5) }
+.wpcf7-form textarea{
+
+    height: 150px;
+    overflow: auto;
+    resize: none;
+    padding-top: 15px;
+}
+.notop{
+    padding-top:0px;
+}
